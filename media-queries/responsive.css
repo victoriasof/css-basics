@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+    #articles {
+        flex-direction: column;
+        background: #2c303a;
+        color: white;
+    }
+}
+
+@media only print and (max-width: 991px) and
+        (min-width: 768px) {
+    #articles {
+        background: #295f63;
+        color: white;
+    }
+}

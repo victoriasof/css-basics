@@ -1,0 +1,100 @@
+/*
+#post > p -> Gets all the direct children p elements inside the element with id posts
+#posts :first-child -> Gets first child of the element with id posts
+#posts :nth-child(2) -> Gets the 2nd child of the element with id posts
+#posts p:nth-of-type(2) -> Gets the 2nd p element child of the element with id posts
+input[name="email"] -> Gets all the input elements having an attribute name="email"
+#posts p -> Gets all the p elements inside the element with id posts (even nested inside other elements)
+*/
+
+/* open-sans-regular - latin_greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/open-sans-v18-latin_greek-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./assets/fonts/open-sans-v18-latin_greek-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/fonts/open-sans-v18-latin_greek-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/open-sans-v18-latin_greek-regular.woff') format('woff'), /* Modern Browsers */
+         url('./assets/fonts/open-sans-v18-latin_greek-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/open-sans-v18-latin_greek-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+#posts > h2 {
+    background: blue;
+    color: white;
+    /* Different ways to declare colors */
+    /* color: #ffffff;
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.603); */
+}
+
+#posts h2 {
+    text-decoration: underline;
+}
+
+#contact {
+    background-color: grey;
+}
+
+#background-image {
+    background-image: url(stars.jpeg);
+    color: white;
+    /* By default browsers repeat the same image to fill the elements width.. that looks ugly meh */
+    background-repeat: no-repeat; 
+    background-size: cover; /* Background image zooms to fill the elements width */
+}
+
+.fancy-title {
+    border-left: 5px solid rgb(252, 83, 5);
+    background: rgb(101, 182, 248);
+}
+
+.borders-example {
+    border: solid green;
+    border-width: 3px 5px 10px 15px;
+}
+
+#paragraph-with-distances {
+    padding: 30px 20px 10px 5px;
+    border: 3px solid black;
+    margin-bottom: 100px;
+    width: 70%;
+}
+
+#links a {
+    display: block;
+    margin: 20px;
+    width: 100px;
+}
+
+#text-align {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:active {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    font-weight: bold;
+}

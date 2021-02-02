@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+section p {
+    background: green;
+    color: white;
+    padding: 50px;
+    margin: 0;
+}
+
+#equal-columns {
+    display: grid;
+    gap: 10px;
+
+    /* The lines below are the same */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section h2 {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    background: lightgray;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+#unequal-columns {
+    display: grid;
+    gap: 10px;
+
+    /* The lines below are the same */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#unequal-columns h2 {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    background: lightgray;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+#grid-template-areas {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "nav1 main-content nav2"
+        "footer footer footer";
+}
+
+#grid-template-areas .header {
+    grid-area: header;
+}
+
+#grid-template-areas #nav1 {
+    grid-area: nav1;
+}
+
+#grid-template-areas main {
+    grid-area: main-content;
+}
+
+#grid-template-areas #nav2 {
+    grid-area: nav2;
+}
+
+#grid-template-areas footer {
+    grid-area: footer;
+}

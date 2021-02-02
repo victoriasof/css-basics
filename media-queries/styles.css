@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    background: #20232a;
+    color: white;
+    padding: 10px 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+#articles {
+    display: flex;
+}
+
+#articles article {
+    padding: 20px;
+}
